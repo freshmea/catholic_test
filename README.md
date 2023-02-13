@@ -37,8 +37,9 @@ ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: 'tu
 * 6교시
   * 마크 다운 문서 쓰는 법 .
   * 오늘 배운 것 마크다운 문서로 정리.
+  * Ubuntu 한글 설정
 * 7교시
-  *
+  * 파라미터 설정, 액션 커맨드 사용 등.
 ```shell
 git config --global user.email "freshmea@naver.com"
 git config --global user.name "freshmea"
