@@ -51,4 +51,24 @@ ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: 'tu
 
 ```
 
+- - -
+## 2023_2_14
+- - -
+
+* 1교시 (10시~)
+  * 파이썬(속성)
+    * 변수 설명
+    * 함수 정의 설명
+    * class 설명
+    * 상속 설명
+* 2교시
+  * 패키지 설명
+```shell
+ros2 pkg create --build-type ament_python my_package
+```
+  * 노드 등록 하는 방법 설명 : setup.py 수정 'mp = my_package.mpub:main'
+  * Error and Try
+* 점심시간
+* 3교시
+  * mpub.py 작성
 
