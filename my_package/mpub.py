@@ -13,7 +13,7 @@ class M_pub(Node):
     msg = String()
     msg.data = f'hello, world : {self.count}'
     self.pub.publish(msg)
-    self.get_logger().info(f'Seding message: [{msg.data}]')
+    self.get_logger().info(f'Sending message: [{msg.data}]')
     self.count += 1
 
 def main():
