@@ -3,8 +3,12 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 	return LaunchDescription([
+    Node(
+      package='turtlesim',
+      executable='turtlesim_node',
+    ),
 		Node(
-    package='my_package',
-    executable='moveturtle',
+      package='my_package',
+      executable='moveturtle',
     )
 	])
