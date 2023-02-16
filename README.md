@@ -72,3 +72,33 @@ ros2 pkg create --build-type ament_python my_package
 * 3교시
   * mpub.py 작성
 
+- - -
+2023_2_15
+- - -
+
+* 1교시(11~)
+  * 런치파일과 파라미터 설정:
+    * background 파라미터 파일.
+    * 런치파일로 스폰 실행시키기.
+* 2교시(1~)
+  * 터틀봇 설명
+* 3교시(2~)
+  * SBC 세팅 : sd card -ubuntu 20.04 server
+  * OpenCR 보드 설정 :
+* 4교시(3~)
+  * SBC 세팅 : 이어서
+* 5교시(4~)
+  * 터틀봇 구동하기 :
+  * network 와 wifi 설정
+* 6교시(5~)
+  * cmd_vel 을 가지고 터틀봇 움직이기
+
+- - -
+20203_2_16
+- - -
+
+* 1교시(10~)
+  * IMU, ODOM data 설명
+* 2교시(11~)
+  * [실습] 터틀심에서 네개의 waypoint로 이동하는 노드 만들기
+*
