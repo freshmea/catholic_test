@@ -33,7 +33,8 @@ def main():
   except:
     node.msg.linear.x = 0.0
     node.msg.angular.z = 0.0
-    node.pub.publish(node.msg)
+    for i in range(10):
+      node.pub.publish(node.msg)
     node.destroy_node()
 
 if __name__ == '__main__':
