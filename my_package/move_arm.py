@@ -10,12 +10,8 @@ from open_manipulator_msgs.srv import SetJointPosition, SetKinematicsPose
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import JointState
-
-if os.name == 'nt':
-    import msvcrt
-else:
-    import termios
-    import tty
+import termios
+import tty
 
 present_joint_angle = [0.0, 0.0, 0.0, 0.0, 0.0]
 goal_joint_angle = [0.0, 0.0, 0.0, 0.0, 0.0]
