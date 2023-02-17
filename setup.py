@@ -32,7 +32,8 @@ setup(
             'ts = my_package.tsub:main',
             'moveturtle = my_package.move_turtle:main',
             'moveturtle2 = my_package.move_turtle2:main',
-            'moveturtle3 = my_package.move_turtle3:main'
+            'moveturtle3 = my_package.move_turtle3:main',
+            'movearm = my_package.move_arm:main'
         ],
     },
 )
