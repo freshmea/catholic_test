@@ -101,4 +101,22 @@ ros2 pkg create --build-type ament_python my_package
   * IMU, ODOM data 설명
 * 2교시(11~)
   * [실습] 터틀심에서 네개의 waypoint로 이동하는 노드 만들기
-*
+* 3교시(1~)
+  * gazebo SLAM NAV2 실습: 지도 만들기, 네비게이션 해 보기
+* 4교시(2~)
+  * 터틀봇3으로 지도 만들어서 네비게이션 해 보기.
+* 5교시(3~)
+  * OpenManipulator 조립 - 1
+* 6교시(4~)
+  * OpenManipulator 조립 - 2
+* 7교시(5~)
+  * OpenManipulator 조립 - 3
+
+
+- - -
+2023_2_17
+- - -
+
+* 1교시(10~)
+* 2교시(11~)
+* 3교시(1~)
