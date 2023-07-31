@@ -13,26 +13,33 @@ def generate_launch_description():
           'param',
           'turtlesim.yaml'))
   return LaunchDescription([
+    # DeclareLaunchArgument(
+    #   'ros_namespace',
+    #   default_value=os.environ['ROS_NAMESPACE'],
+    #   description='Namespace for robot'),
+    
     DeclareLaunchArgument(
       'param_dir',
       default_value=param_dir,
     ),
     Node(
-      package='turtlesim',
-      executable='turtlesim_node',
-      parameters=[param_dir]
+      namespace = 'robot1',
+      package = 'turtlesim',
+      executable = 'turtlesim_node',
+      parameters = [param_dir]
     ),
 		Node(
-    package='my_package',
-    executable='moveturtle2',
+      namespace = 'robot1',
+      package='my_package',
+      executable='moveturtle2',
     ),
     ExecuteProcess(
-        cmd=[[
-            'ros2 service call ',
-            '/spawn ',
-            'turtlesim/srv/Spawn ',
-            '"{x: 2, y: 2, theta: 0.2, name: ''turtle2''}"'
-        ]],
-        shell=True)
+      cmd=[[
+          'ros2 service call ',
+          '/spawn ',
+          'turtlesim/srv/Spawn ',
+          '"{x: 2, y: 2, theta: 0.2, name: ''turtle2''}"'
+      ]],
+      shell=True)
 	]
   )

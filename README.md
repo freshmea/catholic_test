@@ -71,4 +71,10 @@ ros2 pkg create --build-type ament_python my_package
 * 점심시간
 * 3교시
   * mpub.py 작성
-
+  * 한 노드에서 두 개의 노드에 topic 보내기 [mtpub.py, tsub.py]
+* 4교시
+  * mpub.py 변형해서 거북이 움직이기 [move_turtle.py, ]
+* 5교시
+  *
+* 6교시
+  *
