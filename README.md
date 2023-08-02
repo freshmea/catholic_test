@@ -51,4 +51,78 @@ ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: 'tu
 
 ```
 
+- - -
+## 2023_2_14
+- - -
 
+* 1교시 (10시~)
+  * 파이썬(속성)
+    * 변수 설명
+    * 함수 정의 설명
+    * class 설명
+    * 상속 설명
+* 2교시
+  * 패키지 설명
+```shell
+ros2 pkg create --build-type ament_python my_package
+```
+  * 노드 등록 하는 방법 설명 : setup.py 수정 'mp = my_package.mpub:main'
+  * Error and Try
+* 점심시간
+* 3교시
+  * mpub.py 작성
+  * 한 노드에서 두 개의 노드에 topic 보내기 [mtpub.py, tsub.py]
+* 4교시
+  * mpub.py 변형해서 거북이 움직이기 [move_turtle.py, ]
+* 5교시
+  *
+* 6교시
+  *
+- - -
+2023_2_15
+- - -
+
+* 1교시(11~)
+  * 런치파일과 파라미터 설정:
+    * background 파라미터 파일.
+    * 런치파일로 스폰 실행시키기.
+* 2교시(1~)
+  * 터틀봇 설명
+* 3교시(2~)
+  * SBC 세팅 : sd card -ubuntu 20.04 server
+  * OpenCR 보드 설정 :
+* 4교시(3~)
+  * SBC 세팅 : 이어서
+* 5교시(4~)
+  * 터틀봇 구동하기 :
+  * network 와 wifi 설정
+* 6교시(5~)
+  * cmd_vel 을 가지고 터틀봇 움직이기
+
+- - -
+20203_2_16
+- - -
+
+* 1교시(10~)
+  * IMU, ODOM data 설명
+* 2교시(11~)
+  * [실습] 터틀심에서 네개의 waypoint로 이동하는 노드 만들기
+* 3교시(1~)
+  * gazebo SLAM NAV2 실습: 지도 만들기, 네비게이션 해 보기
+* 4교시(2~)
+  * 터틀봇3으로 지도 만들어서 네비게이션 해 보기.
+* 5교시(3~)
+  * OpenManipulator 조립 - 1
+* 6교시(4~)
+  * OpenManipulator 조립 - 2
+* 7교시(5~)
+  * OpenManipulator 조립 - 3
+
+
+- - -
+2023_2_17
+- - -
+
+* 1교시(10~)
+* 2교시(11~)
+* 3교시(1~)
