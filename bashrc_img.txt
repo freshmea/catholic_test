@@ -1,0 +1,195 @@
+ip link show
+ip a
+~~
+sudo nano /etc/netplan/50-cloud-init.yaml 
+sudo netplan apply
+ip a
+reboot
+sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+systemctl mask systemd-networkd-wait-online.service
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo swapoff /swapfile
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo nano /etc/fstab
+sudo free -h
+sudo reboot now
+sudo shutdown now
+ifconfig
+ls /dev
+sudo nano /boot/firmware/config.txt
+ls
+ls /dev
+sudo reboot
+\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00ifconfig
+history
+sudo nano /etc/netplan/50-cloud-init.yaml 
+sudo nano /boot/firmware/config.txt
+cs
+ls
+git clone https://github.com/christianrauch/raspicam2_node.git
+cw
+cb
+sudo apt autoremove --purge libgles2-mesa-dev mesa-common-dev
+sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa
+cb
+sudo apt install libraspberrypi-bin libraspberrypi-dev
+cb
+sb
+ls
+cd src/
+ls
+cd raspicam2_node/
+ls
+cd cfg/
+ls
+sudo nano params.yaml 
+cd ..
+cw
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+sudo usermod -a -G video ubuntu
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+sudo apt-get install v4l-utils
+v4l2-ctl --list-devices
+df -h
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+sudo reboot
+history
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+exit
+ros2 run turtlebot3_teleop teleop_keyboard 
+exit
+sudo sh -c "echo none > /sys/class/leds/led0/trigger"
+sudo sh -c "echo 1 > /sys/class/leds/led0/brightness" #allume la led
+vi .bashrc
+ls
+vi .bashrc
+cd turtlebot3_ws/src/
+ls
+cd turtlebot3/
+ls
+cd ..
+ls
+cd raspicam2_node/
+ls
+cd src
+ls
+cd ..
+ls
+cd ..
+l
+cd turtlebot3/
+ls
+cd
+vi .bashrc
+sb
+ros2 launch turtlebot3_bringup robot.launch.py 
+ls
+cd opencr_update/
+ls
+cat README.md 
+update.sh /dev/ttyACM0 burger.opencr
+./update.sh /dev/ttyACM0 burger.opencr
+cd
+ros2 launch turtlebot3_bringup robot.launch.py 
+exit
+cd /etc/netplan
+sudo cp 50-cloud-init.yaml 
+sudo cp 50-cloud-init.yaml 50-cloud-init.yaml.bak
+vi 50-cloud-init.yaml
+sudo vi 50-cloud-init.yaml
+sudo reboot
+ros2 launch turtlebot3_bringup robot.launch.py 
+exit
+nano .bashrc
+ros2 launch turtlebot3_bringup robot.launch.py 
+exit
+ros2 launch turtlebot3_bringup robot.launch.py 
+cd /etc/netplan
+sudo rm 50-cloud-init.yaml
+sudo mv 50-cloud-init.yaml.bak 50-cloud-init.yaml
+sudo poweroff
+ls
+cd turtlebot3_ws/
+ls
+cd src
+ls
+ros2 run raspicam2 raspicam2_node 
+sudo nano ~/.bashrc
+source ~/.bashrc
+history
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+shutdown
+exit
+ifconfig
+ld
+ls
+cat ~/.bashrv
+cat ~/.bashrc
+rt
+sb
+rt
+history
+mkdir robot
+rm robot
+rm -rf robot/
+mkdir robot_ws
+cd robot_ws/
+mkdir src
+cb
+python3 -V
+sudo apt install python3-vcstool
+sb
+clear
+python3
+python3 -m pip install rpi.gpio
+sudo apt install pip
+python -V
+sudo apt upgrade
+sudo apt update
+sudo apt upgrade
+sudo apt install pip
+python3 -m pip install rpi.gpio
+sudo groupadd gpio
+sudo usermod -a -G gpio ubuntu
+sudo grep gpio /etc/group
+sudo chown root.gpio /dev/gpiomem
+sudo chmod g+rw /dev/gpiomem
+is -l /dev/gpiomem
+ls -l /dev/gpiomem
+python3 -m install pyserial
+python3 -m pip install pyserial
+lsusb
+cd /etc/udev/rules.d/
+ls
+cat 70-snap.snapd.rules 
+cat 70-snap.snapd.rules | grep ACM0
+mqtt
+cd ~
+ls
+sudo apt install -y mosquitto
+sudo /etc/init.d/mosquitto status
+sudo nano /etc/mosquitto/mosquitto.conf 
+sudo systemctl restart mosquitto.service 
+sudo apt install -y mosquitto-clients 
+mosquitto_sub -t /test
+sudo apt install -y mosquitto-clients 
+sudo systemctl restart mosquitto.service 
+sudo systemctl list | grep mosquitto
+sudo systemctl list 
+reboot
+mosquitto_sub -t /test
+sudo nano /etc/mosquitto/mosquitto.conf 
+sudo systemctl restart mosquitto.service 
+mosquitto_sub -t /test
+sudo nano /etc/mosquitto/mosquitto.conf 
+sudo systemctl restart mosquitto.service 
+systemctl status mosquitto.service
+sudo nano /etc/mosquitto/mosquitto.conf 
+systemctl status mosquitto.service
+sudo systemctl restart mosquitto.service 
+systemctl status mosquitto.service
+mosquitto_sub -t /test
+poweroff
